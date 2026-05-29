@@ -1,0 +1,272 @@
+[
+  {
+    "topic_id": 3,
+    "content": "Python là loại ngôn ngữ lập trình thuộc nhóm nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Ngôn ngữ bậc cao, thông dịch", "Ngôn ngữ máy", "Ngôn ngữ hợp ngữ (Assembly)", "Ngôn ngữ đánh dấu (markup)"],
+    "correct_answer": "Ngôn ngữ bậc cao, thông dịch",
+    "source_page": "AI-drafted, verify with SGK Tin 10 CD Bài 16"
+  },
+  {
+    "topic_id": 3,
+    "content": "Lệnh nào sau đây in ra màn hình trong Python?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["print()", "echo()", "console.log()", "write()"],
+    "correct_answer": "print()",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Để khai báo biến a có giá trị 10 trong Python, viết là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["a = 10", "int a = 10", "var a = 10", "a := 10;"],
+    "correct_answer": "a = 10",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Kiểu dữ liệu int trong Python dùng để biểu diễn?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Số nguyên", "Số thực", "Chuỗi", "Giá trị đúng/sai"],
+    "correct_answer": "Số nguyên",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Kiểu str trong Python dùng cho dữ liệu nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Chuỗi ký tự", "Số nguyên", "Số thực", "Giá trị logic"],
+    "correct_answer": "Chuỗi ký tự",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Để đọc giá trị từ bàn phím vào biến, ta dùng hàm nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["input()", "read()", "scan()", "get()"],
+    "correct_answer": "input()",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Ký hiệu nào dùng để viết chú thích (comment) một dòng trong Python?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["#", "//", "/* */", "--"],
+    "correct_answer": "#",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Toán tử == trong Python có ý nghĩa gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["So sánh bằng", "Gán giá trị", "Cộng", "Lũy thừa"],
+    "correct_answer": "So sánh bằng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Trong Python, việc thụt lề (indent) có vai trò gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Xác định khối lệnh (block)", "Làm đẹp code, không bắt buộc", "Chú thích code", "Tăng tốc thực thi"],
+    "correct_answer": "Xác định khối lệnh (block)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Kết quả của lệnh print(2 + 3) là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["5", "23", "'5'", "2+3"],
+    "correct_answer": "5",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Kết quả của 7 // 2 trong Python là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["3", "3.5", "4", "1"],
+    "correct_answer": "3",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Kết quả của 7 % 2 trong Python là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["1", "3", "3.5", "0"],
+    "correct_answer": "1",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Lệnh type(\"3\") trả về kết quả nào?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["<class 'str'>", "<class 'int'>", "<class 'float'>", "Lỗi"],
+    "correct_answer": "<class 'str'>",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Giá trị của biểu thức \"hello\"[0] là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["'h'", "'o'", "'hello'", "Lỗi"],
+    "correct_answer": "'h'",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Lệnh len(\"python\") trả về?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["6", "5", "7", "Lỗi"],
+    "correct_answer": "6",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Sự khác biệt cơ bản giữa list và tuple trong Python là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["List có thể thay đổi (mutable), tuple thì không (immutable)", "List nhanh hơn tuple", "Tuple chỉ chứa số", "List dùng [], tuple dùng {}"],
+    "correct_answer": "List có thể thay đổi (mutable), tuple thì không (immutable)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Đoạn code 'for i in range(3): print(i)' sẽ in ra?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["0, 1, 2 trên 3 dòng", "1, 2, 3 trên 3 dòng", "0, 1, 2, 3 trên 4 dòng", "3"],
+    "correct_answer": "0, 1, 2 trên 3 dòng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Lệnh nào dùng để thoát ngay lập tức khỏi vòng lặp?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["break", "continue", "exit", "return"],
+    "correct_answer": "break",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Cho a = [10, 20, 30, 40]. a[2] có giá trị?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["30", "20", "40", "Lỗi"],
+    "correct_answer": "30",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Hàm float(\"3.14\") trả về?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["3.14", "3", "\"3.14\"", "Lỗi"],
+    "correct_answer": "3.14",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Output của đoạn: print([x**2 for x in range(4)]) là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["[0, 1, 4, 9]", "[1, 4, 9, 16]", "[0, 2, 4, 6]", "[0, 1, 2, 3]"],
+    "correct_answer": "[0, 1, 4, 9]",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Cho name = \"Anh\". Output của print(f\"Hello {name}!\") là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Hello Anh!", "Hello {name}!", "Hello name!", "Lỗi"],
+    "correct_answer": "Hello Anh!",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Giá trị của 2 ** 10 trong Python là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["1024", "20", "100", "12"],
+    "correct_answer": "1024",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Output của 'python'[1:4] là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["'yth'", "'pyt'", "'ytho'", "'pytho'"],
+    "correct_answer": "'yth'",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Cho a = 5, b = 3. Sau lệnh a, b = b, a thì a và b lần lượt là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["3 và 5", "5 và 3", "5 và 5", "3 và 3"],
+    "correct_answer": "3 và 5",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Output của đoạn code:\nn = 0\nwhile n < 3:\n    n += 1\nprint(n)",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["3", "0", "2", "Vòng lặp vô hạn"],
+    "correct_answer": "3",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Đoạn 'def f(x, y=2): return x + y' rồi gọi f(5). Kết quả?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["7", "5", "10", "Lỗi vì thiếu y"],
+    "correct_answer": "7",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Output của 'Hello' + ' ' + 'World' là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["'Hello World'", "'HelloWorld'", "'Hello + World'", "Lỗi"],
+    "correct_answer": "'Hello World'",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Output của sorted([3, 1, 4, 1, 5]) là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["[1, 1, 3, 4, 5]", "[5, 4, 3, 1, 1]", "[1, 3, 4, 5]", "[3, 1, 4, 1, 5]"],
+    "correct_answer": "[1, 1, 3, 4, 5]",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 3,
+    "content": "Đoạn:\nx = 10\nif x > 5:\n    print('A')\nelif x > 0:\n    print('B')\nelse:\n    print('C')\n→ in ra?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["A", "B", "C", "A B"],
+    "correct_answer": "A",
+    "source_page": "AI-drafted, verify with SGK"
+  }
+]

@@ -1,0 +1,96 @@
+{% extends "base_public.html" %}
+{% block title %}Hệ thống học Tin 10 — Cánh Diều{% endblock %}
+{% block content %}
+
+<!-- Hero -->
+<section class="max-w-6xl mx-auto px-4 pt-10 md:pt-16 pb-12 grid md:grid-cols-2 gap-10 items-center">
+  <div>
+    <p class="text-sm font-semibold text-brand-500 mb-3 tracking-wide">HỌC TỪ HÔM NAY</p>
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight text-slate-900">
+      Nền tảng học<br>
+      <span class="text-brand-500">Tin học</span> <span class="text-brand-accent">cá nhân hóa</span><br>
+      cho mọi học sinh
+    </h1>
+    <p class="mt-5 text-slate-600 max-w-md">
+      Khóa học Tin 10 Cánh Diều dành cho mọi bạn đam mê tin học — hệ thống tự đo
+      điểm mạnh/yếu bằng AI và gợi ý bài học phù hợp với bạn.
+    </p>
+    <div class="mt-7 flex flex-wrap gap-3">
+      {% if current_user %}
+        <a href="/topics" class="px-6 py-3 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600 shadow-lg shadow-brand-500/30">
+          Vào học ngay →
+        </a>
+      {% else %}
+        <a href="/register" class="px-6 py-3 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600 shadow-lg shadow-brand-500/30">
+          Khám phá khóa học →
+        </a>
+        <a href="/login" class="px-6 py-3 rounded-full bg-white text-slate-700 font-semibold hover:bg-brand-50 border border-brand-200">
+          Đăng nhập
+        </a>
+      {% endif %}
+    </div>
+    <div class="mt-8 flex items-center gap-8 text-slate-500 text-sm">
+      <div><span class="text-2xl font-bold text-slate-900">3</span> thuật toán ML</div>
+      <div><span class="text-2xl font-bold text-slate-900">4</span> chủ đề</div>
+      <div><span class="text-2xl font-bold text-slate-900">120+</span> câu hỏi</div>
+    </div>
+  </div>
+
+  <div class="relative">
+    <div class="aspect-square rounded-full bg-gradient-to-br from-brand-300 via-brand-200 to-brand-accent/40 grid place-items-center text-[10rem] shadow-2xl shadow-brand-500/20">
+      🤖
+    </div>
+    <div class="absolute top-6 -left-2 bg-white rounded-2xl shadow-lg px-4 py-3 text-sm font-semibold">
+      📈 100+ <span class="text-slate-500 font-normal">Mentor AI</span>
+    </div>
+    <div class="absolute bottom-8 -right-2 bg-white rounded-2xl shadow-lg px-4 py-3 text-sm font-semibold">
+      📚 1K+ <span class="text-slate-500 font-normal">Câu hỏi</span>
+    </div>
+  </div>
+</section>
+
+<!-- Features -->
+<section id="features" class="max-w-6xl mx-auto px-4 py-10">
+  <p class="text-center text-sm font-semibold text-brand-500 mb-1">CÔNG NGHỆ ML</p>
+  <h2 class="text-center text-3xl font-bold text-slate-900 mb-10">Học thông minh hơn, không học vẹt</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    {% set cards = [
+      ("📊", "Mastery Tracking (BKT)", "Mỗi câu trả lời cập nhật xác suất bạn đã nắm vững chủ đề — Bayesian Knowledge Tracing."),
+      ("🎯", "Câu hỏi thích ứng (IRT)", "Chọn câu hỏi độ khó vừa với năng lực θ của bạn — không quá dễ, không quá khó."),
+      ("👥", "Phân nhóm (K-means)", "Gom học sinh thành 3 nhóm yếu / trung bình / giỏi để định hướng nội dung.")
+    ] %}
+    {% for icon, title, desc in cards %}
+    <div class="bg-white rounded-3xl p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition border border-brand-100">
+      <div class="grid place-items-center w-14 h-14 rounded-2xl bg-brand-100 text-3xl mb-4">{{ icon }}</div>
+      <h3 class="font-bold text-lg mb-2 text-slate-900">{{ title }}</h3>
+      <p class="text-sm text-slate-600 leading-relaxed">{{ desc }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<!-- Topics -->
+<section class="max-w-6xl mx-auto px-4 py-10">
+  <div class="bg-white rounded-4xl p-8 md:p-10 shadow-sm border border-brand-100">
+    <h2 class="font-bold text-2xl mb-6 text-slate-900">4 chủ đề trong chương trình</h2>
+    <div class="grid md:grid-cols-2 gap-4">
+      {% set topics_demo = [
+        ("📡", "Mạng máy tính & Internet", "Bài 1"),
+        ("💾", "Dữ liệu, thông tin & xử lý thông tin", "Bài 6"),
+        ("🐍", "Python cơ bản", "Bài 16"),
+        ("🧠", "Lập trình giải bài toán", "Bài 18")
+      ] %}
+      {% for icon, name, b in topics_demo %}
+      <div class="flex items-center gap-4 p-4 rounded-2xl bg-brand-50">
+        <span class="grid place-items-center w-12 h-12 rounded-xl bg-white text-2xl">{{ icon }}</span>
+        <div>
+          <div class="font-semibold text-slate-900">{{ name }}</div>
+          <div class="text-xs text-brand-500 font-medium">{{ b }}</div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% endblock %}

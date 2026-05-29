@@ -1,0 +1,272 @@
+[
+  {
+    "topic_id": 1,
+    "content": "Internet là gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Một mạng máy tính toàn cầu kết nối hàng tỉ thiết bị", "Một trang web do Google quản lý", "Một thiết bị phần cứng kết nối máy tính", "Một phần mềm duyệt trang web"],
+    "correct_answer": "Một mạng máy tính toàn cầu kết nối hàng tỉ thiết bị",
+    "source_page": "AI-drafted, verify with SGK Tin 10 CD Bài 1"
+  },
+  {
+    "topic_id": 1,
+    "content": "URL là viết tắt của cụm từ nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Universal Resource Link", "Uniform Resource Locator", "Unified Routing Link", "User Resource Location"],
+    "correct_answer": "Uniform Resource Locator",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Mạng LAN là viết tắt của?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Local Area Network", "Large Area Network", "Limited Access Network", "Linked Application Node"],
+    "correct_answer": "Local Area Network",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "WAN khác với LAN chủ yếu ở điểm nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["WAN có phạm vi địa lý rộng hơn LAN", "WAN nhanh hơn LAN", "WAN không dùng giao thức TCP/IP", "WAN không thể kết nối Internet"],
+    "correct_answer": "WAN có phạm vi địa lý rộng hơn LAN",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "ISP là từ viết tắt chỉ?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Nhà cung cấp dịch vụ Internet", "Giao thức an ninh Internet", "Phần mềm bảo vệ mạng", "Thiết bị phát Wi-Fi"],
+    "correct_answer": "Nhà cung cấp dịch vụ Internet",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Trình duyệt web (web browser) có vai trò gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Hiển thị các trang web cho người dùng", "Lưu trữ file trên Internet", "Bảo mật mật khẩu người dùng", "Chia sẻ kết nối Wi-Fi"],
+    "correct_answer": "Hiển thị các trang web cho người dùng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Wi-Fi là công nghệ kết nối mạng thuộc loại nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Không dây", "Cáp đồng trục", "Cáp quang", "Cáp xoắn đôi"],
+    "correct_answer": "Không dây",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "World Wide Web (WWW) là gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Hệ thống các trang web liên kết qua Internet", "Một loại cáp mạng tốc độ cao", "Một thiết bị định tuyến", "Một ngôn ngữ lập trình web"],
+    "correct_answer": "Hệ thống các trang web liên kết qua Internet",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Địa chỉ IP có chức năng chính là gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Định danh thiết bị trong mạng", "Tăng tốc độ truyền dữ liệu", "Mã hóa thông tin", "Lưu lịch sử truy cập"],
+    "correct_answer": "Định danh thiết bị trong mạng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Email là dịch vụ Internet dùng để?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Gửi và nhận thư điện tử", "Gọi điện thoại quốc tế miễn phí", "Tải video tốc độ cao", "Tìm kiếm trang web"],
+    "correct_answer": "Gửi và nhận thư điện tử",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Giao thức nào sau đây dùng để truyền trang web?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["FTP", "HTTP", "SMTP", "POP3"],
+    "correct_answer": "HTTP",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Sự khác biệt chính giữa HTTP và HTTPS là gì?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["HTTPS được mã hóa, HTTP thì không", "HTTPS nhanh hơn HTTP", "HTTP an toàn hơn HTTPS", "HTTPS chỉ dùng cho mạng LAN"],
+    "correct_answer": "HTTPS được mã hóa, HTTP thì không",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Trong URL https://www.example.com/page, phần 'www.example.com' được gọi là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Tên miền (domain)", "Giao thức", "Cổng kết nối", "Tài nguyên"],
+    "correct_answer": "Tên miền (domain)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "DNS có chức năng gì?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Chuyển tên miền thành địa chỉ IP", "Mã hóa dữ liệu Internet", "Quản lý mật khẩu", "Lưu trữ trang web"],
+    "correct_answer": "Chuyển tên miền thành địa chỉ IP",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Đơn vị đo băng thông mạng phổ biến là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["bit/giây (bps)", "MHz", "Watt", "Volt"],
+    "correct_answer": "bit/giây (bps)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Router (bộ định tuyến) có chức năng nào sau đây?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Định tuyến gói tin giữa các mạng", "Lưu trữ file lớn", "Mã hóa mật khẩu", "Hiển thị trang web"],
+    "correct_answer": "Định tuyến gói tin giữa các mạng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Trong địa chỉ IPv4, mỗi octet (số) có giá trị tối đa là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["255", "128", "512", "1024"],
+    "correct_answer": "255",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Cáp quang truyền dữ liệu bằng phương tiện gì?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Tín hiệu ánh sáng", "Sóng radio", "Điện áp xoay chiều", "Sóng âm"],
+    "correct_answer": "Tín hiệu ánh sáng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Khi gõ một địa chỉ web vào trình duyệt, hành động đầu tiên xảy ra là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Tra cứu DNS để tìm địa chỉ IP", "Tải toàn bộ trang về máy", "Mã hóa SSL ngay lập tức", "Đăng nhập tự động"],
+    "correct_answer": "Tra cứu DNS để tìm địa chỉ IP",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Mạng hình sao (star topology) có đặc điểm chính là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Tất cả thiết bị kết nối qua một trung tâm (switch/hub)", "Các thiết bị nối tiếp thành vòng tròn", "Mọi thiết bị kết nối trực tiếp với nhau", "Một đường truyền chung cho mọi thiết bị"],
+    "correct_answer": "Tất cả thiết bị kết nối qua một trung tâm (switch/hub)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Một file kích thước 100 MB tải xuống với tốc độ 10 MB/giây. Thời gian tối thiểu để hoàn tất là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["10 giây", "100 giây", "1 giây", "1 phút 40 giây"],
+    "correct_answer": "10 giây",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Tại sao trang web ngân hàng luôn dùng HTTPS thay vì HTTP?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Mã hóa dữ liệu, bảo vệ thông tin nhạy cảm khi truyền", "Tăng tốc độ tải trang", "Giảm chi phí băng thông", "Bắt buộc bởi trình duyệt"],
+    "correct_answer": "Mã hóa dữ liệu, bảo vệ thông tin nhạy cảm khi truyền",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Khi mở trang www.example.com nhưng nhận được lỗi 'DNS_PROBE_FINISHED_NXDOMAIN', nguyên nhân có thể là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Tên miền không tồn tại hoặc DNS không tra cứu được", "Mật khẩu Wi-Fi sai", "Cáp mạng đứt", "Máy tính hết pin"],
+    "correct_answer": "Tên miền không tồn tại hoặc DNS không tra cứu được",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Mã lỗi 404 trên trang web có ý nghĩa gì?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Trang/tài nguyên không được tìm thấy trên máy chủ", "Máy chủ bị quá tải", "Sai mật khẩu đăng nhập", "Tốc độ Internet quá chậm"],
+    "correct_answer": "Trang/tài nguyên không được tìm thấy trên máy chủ",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Một mạng dùng subnet mask 255.255.255.0 (/24) tối đa có bao nhiêu host khả dụng?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["254", "256", "128", "510"],
+    "correct_answer": "254",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "VPN (Virtual Private Network) thường dùng để?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Tạo kết nối mã hóa an toàn qua mạng công cộng", "Tăng tốc Wi-Fi gia đình", "Sao lưu file tự động", "Lọc thư rác"],
+    "correct_answer": "Tạo kết nối mã hóa an toàn qua mạng công cộng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Trong mô hình client-server, máy chủ (server) có nhiệm vụ chính là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Cung cấp tài nguyên/dịch vụ theo yêu cầu của client", "Chỉ nhận dữ liệu, không gửi", "Hoạt động độc lập, không cần client", "Thay thế router trong mạng LAN"],
+    "correct_answer": "Cung cấp tài nguyên/dịch vụ theo yêu cầu của client",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Cookie trong trình duyệt được dùng chủ yếu cho mục đích gì?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Lưu trạng thái phiên truy cập của người dùng trên trang web", "Tăng tốc kết nối Internet", "Mã hóa mật khẩu Wi-Fi", "Diệt virus tự động"],
+    "correct_answer": "Lưu trạng thái phiên truy cập của người dùng trên trang web",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Tấn công 'phishing' (lừa đảo) trên Internet thường có dấu hiệu nào?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Email/trang web giả mạo yêu cầu cung cấp mật khẩu, thông tin cá nhân", "Mạng Internet bị chậm bất thường", "Máy tính tự khởi động lại nhiều lần", "File tự động bị nén"],
+    "correct_answer": "Email/trang web giả mạo yêu cầu cung cấp mật khẩu, thông tin cá nhân",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 1,
+    "content": "Một công ty có 5 chi nhánh ở 5 thành phố, cần kết nối thông tin nội bộ giữa các chi nhánh. Loại mạng phù hợp nhất là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["WAN", "LAN", "PAN", "Bluetooth"],
+    "correct_answer": "WAN",
+    "source_page": "AI-drafted, verify with SGK"
+  }
+]

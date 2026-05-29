@@ -1,0 +1,70 @@
+{% extends "base_app.html" %}
+{% set active = "profile" %}
+{% block title %}Hồ sơ — Tin 10{% endblock %}
+{% block page_title %}Hồ sơ của tôi 👤{% endblock %}
+{% block page_subtitle %}Thông tin tài khoản và năng lực học tập.{% endblock %}
+{% block content %}
+
+<div class="grid md:grid-cols-3 gap-6 max-w-4xl">
+
+  <!-- Avatar card -->
+  <div class="bg-white rounded-4xl shadow-sm border border-brand-100 p-6 text-center">
+    <div class="mx-auto grid place-items-center w-24 h-24 rounded-full bg-gradient-to-br from-brand-400 to-brand-accent text-white text-4xl font-extrabold">
+      {{ current_user.username[0] | upper }}
+    </div>
+    <h2 class="font-bold text-xl text-slate-900 mt-4">{{ current_user.username }}</h2>
+    <span class="inline-block mt-2 px-3 py-1 rounded-full text-xs font-medium
+        {% if current_user.is_admin %}bg-brand-100 text-brand-700{% else %}bg-emerald-100 text-emerald-700{% endif %}">
+      {{ "Quản trị viên" if current_user.is_admin else "Học sinh" }}
+    </span>
+  </div>
+
+  <!-- Info card -->
+  <div class="md:col-span-2 bg-white rounded-4xl shadow-sm border border-brand-100 p-6">
+    <h2 class="font-bold text-lg text-slate-900 mb-4">Thông tin cá nhân</h2>
+    <dl class="divide-y divide-brand-50 text-sm">
+      <div class="flex justify-between py-3">
+        <dt class="text-slate-400">Tên đăng nhập</dt>
+        <dd class="font-medium text-slate-700">{{ current_user.username }}</dd>
+      </div>
+      <div class="flex justify-between py-3">
+        <dt class="text-slate-400">Thành viên từ</dt>
+        <dd class="font-medium text-slate-700">{{ current_user.created_at.strftime('%d/%m/%Y') }}</dd>
+      </div>
+      <div class="flex justify-between py-3">
+        <dt class="text-slate-400">Năng lực θ (IRT)</dt>
+        <dd class="font-medium text-slate-700">{{ "%.2f"|format(current_user.ability_theta) }}</dd>
+      </div>
+      <div class="flex justify-between py-3">
+        <dt class="text-slate-400">Nhóm học tập (K-means)</dt>
+        <dd class="font-medium text-slate-700">{{ cluster_name or "Chưa đủ dữ liệu" }}</dd>
+      </div>
+    </dl>
+  </div>
+</div>
+
+<!-- Stats -->
+<div class="grid grid-cols-3 gap-4 max-w-4xl mt-6">
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100 text-center">
+    <div class="text-3xl font-extrabold text-slate-900">{{ total_attempts }}</div>
+    <div class="text-xs text-slate-400 mt-1">Lượt làm bài</div>
+  </div>
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100 text-center">
+    <div class="text-3xl font-extrabold text-brand-500">{{ correct_attempts }}</div>
+    <div class="text-xs text-slate-400 mt-1">Câu đúng</div>
+  </div>
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100 text-center">
+    <div class="text-3xl font-extrabold text-emerald-500">{{ "%.0f"|format(accuracy) }}%</div>
+    <div class="text-xs text-slate-400 mt-1">Độ chính xác</div>
+  </div>
+</div>
+
+<div class="max-w-4xl mt-6">
+  <form action="/logout" method="post">
+    <button type="submit" class="px-6 py-2.5 rounded-full bg-rose-500 text-white font-semibold hover:bg-rose-600">
+      🚪 Đăng xuất
+    </button>
+  </form>
+</div>
+
+{% endblock %}

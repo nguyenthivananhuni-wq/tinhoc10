@@ -1,0 +1,124 @@
+{% extends "base_app.html" %}
+{% set active = "admin" %}
+{% set admin_active = "clusters" %}
+{% block title %}Phân cụm học sinh — Admin{% endblock %}
+{% block page_title %}Phân cụm học sinh 👥{% endblock %}
+{% block page_subtitle %}K-means gom nhóm học sinh theo 4 đặc trưng — trực quan hóa PCA 2D.{% endblock %}
+{% block content %}
+
+{% include "_admin_tabs.html" %}
+
+<div class="mb-6 flex justify-end">
+  <form action="/admin/seed_demo" method="post">
+    <button type="submit"
+            class="px-5 py-2.5 rounded-full bg-slate-800 text-white font-medium hover:bg-slate-700">
+      🧪 Tạo dữ liệu demo
+    </button>
+  </form>
+</div>
+
+{% if not result.ok %}
+<div class="p-6 bg-yellow-50 border border-yellow-200 rounded-lg text-yellow-800">
+  <p class="font-medium mb-1">Chưa đủ dữ liệu để phân cụm.</p>
+  <p class="text-sm">{{ result.reason }}</p>
+  <p class="text-sm mt-2">Bấm <strong>"Tạo dữ liệu demo"</strong> ở trên để sinh 3 học sinh mẫu.</p>
+</div>
+{% else %}
+
+<div class="grid md:grid-cols-3 gap-4 mb-6">
+  {% for s in result.summary %}
+  <div class="bg-white border border-brand-100 rounded-3xl p-5">
+    <div class="flex items-center justify-between">
+      <h2 class="font-bold text-lg">{{ s.name }}</h2>
+      <span class="text-sm px-2 py-0.5 rounded-full bg-slate-100 text-slate-600">
+        {{ s.size }} HS
+      </span>
+    </div>
+    <div class="text-sm text-slate-500 mt-1">Mastery TB: <strong>{{ (s.avg_mastery * 100)|round(1) }}%</strong></div>
+    <div class="text-xs text-slate-500 mt-2">{{ s.usernames|join(", ") }}</div>
+  </div>
+  {% endfor %}
+</div>
+
+<div class="grid md:grid-cols-2 gap-6">
+  <div class="bg-white border border-brand-100 rounded-3xl p-5">
+    <h2 class="font-bold text-lg mb-1">Scatter plot (PCA 2D)</h2>
+    <p class="text-xs text-slate-500 mb-3">{{ result.n_users }} học sinh · K = {{ result.k }} cụm</p>
+    <canvas id="clusterScatter" height="320"></canvas>
+  </div>
+
+  <div class="bg-white border border-brand-100 rounded-3xl p-5">
+    <h2 class="font-bold text-lg mb-3">Chi tiết học sinh</h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-sm">
+        <thead>
+          <tr class="text-left text-slate-500 border-b">
+            <th class="py-2 pr-2">User</th>
+            <th class="py-2 pr-2">Nhóm</th>
+            <th class="py-2 pr-2">Mastery</th>
+            <th class="py-2 pr-2">Câu</th>
+            <th class="py-2">Acc khó</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for p in result.points %}
+          <tr class="border-b border-slate-100">
+            <td class="py-2 pr-2 font-medium">{{ p.username }}</td>
+            <td class="py-2 pr-2">{{ p.cluster_name }}</td>
+            <td class="py-2 pr-2">{{ (p.avg_mastery * 100)|round(0)|int }}%</td>
+            <td class="py-2 pr-2">{{ p.total_attempts }}</td>
+            <td class="py-2">{{ (p.accuracy_hard * 100)|round(0)|int }}%</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="mt-6 pt-4 border-t border-slate-200 text-xs text-slate-500">
+  <strong>Đặc trưng:</strong> {{ result.feature_names|join(", ") }}.
+  Pipeline: StandardScaler → KMeans(k=3) → đặt tên cụm theo mastery trung bình của tâm cụm.
+  Citation: MacQueen (1967).
+</div>
+
+{% endif %}
+
+{% endblock %}
+
+{% block scripts %}
+{% if result.ok %}
+<script>
+(function () {
+  const datasets = {{ datasets|tojson }}.map(d => ({
+    label: d.label,
+    data: d.data,
+    backgroundColor: d.color,
+    pointRadius: 7,
+    pointHoverRadius: 9,
+  }));
+  const ctx = document.getElementById('clusterScatter').getContext('2d');
+  new Chart(ctx, {
+    type: 'scatter',
+    data: { datasets },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      scales: {
+        x: { title: { display: true, text: 'PC1' } },
+        y: { title: { display: true, text: 'PC2' } }
+      },
+      plugins: {
+        legend: { position: 'top' },
+        tooltip: {
+          callbacks: {
+            label: (c) => `${c.raw.username} (${c.dataset.label})`
+          }
+        }
+      }
+    }
+  });
+})();
+</script>
+{% endif %}
+{% endblock %}

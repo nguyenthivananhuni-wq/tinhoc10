@@ -1,0 +1,90 @@
+<div id="quiz-card" class="bg-white rounded-4xl shadow-sm border border-brand-100 p-6 md:p-8">
+
+  <div class="mb-5">
+    <div class="flex justify-between text-sm text-slate-400 mb-1.5">
+      <span>Câu {{ current_index }} / {{ total }}</span>
+      <span>
+        {% if question.difficulty_level == 1 %}🟢 Dễ
+        {% elif question.difficulty_level == 2 %}🟡 Trung bình
+        {% else %}🔴 Khó{% endif %}
+      </span>
+    </div>
+    <div class="w-full bg-brand-50 rounded-full h-2.5">
+      <div class="bg-brand-500 h-2.5 rounded-full transition-all"
+           style="width: {{ (current_index / total * 100) | round(1) }}%"></div>
+    </div>
+  </div>
+
+  <h2 class="text-lg font-semibold text-slate-900 mb-5 whitespace-pre-line">
+    {{ question.content }}
+  </h2>
+
+  {% if phase == "answer" %}
+    <form hx-post="/quiz/answer"
+          hx-target="#quiz-card"
+          hx-swap="outerHTML"
+          hx-disabled-elt="find button[type=submit]"
+          class="space-y-2.5"
+          data-quiz-form>
+      <input type="hidden" name="session_id" value="{{ session_id }}">
+      <input type="hidden" name="question_id" value="{{ question.id }}">
+      <input type="hidden" name="response_time_ms" value="0" data-response-time>
+
+      {% for opt in options %}
+      <label class="block p-3.5 border-2 border-brand-100 rounded-2xl cursor-pointer hover:border-brand-400 hover:bg-brand-50 transition">
+        <input type="radio" name="selected_answer" value="{{ opt }}" required class="mr-2 accent-brand-500">
+        <span>{{ opt }}</span>
+      </label>
+      {% endfor %}
+
+      <button type="submit"
+              class="w-full mt-4 py-3 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600 disabled:opacity-50">
+        Nộp đáp án
+      </button>
+    </form>
+  {% else %}
+    <div class="space-y-2.5 mb-4">
+      {% for opt in options %}
+        {% set is_correct_opt = (opt == question.correct_answer) %}
+        {% set is_selected = (opt == selected_answer) %}
+        <div class="p-3.5 border-2 rounded-2xl flex items-center justify-between
+                    {% if is_correct_opt %}border-emerald-400 bg-emerald-50
+                    {% elif is_selected %}border-rose-400 bg-rose-50
+                    {% else %}border-brand-100{% endif %}">
+          <span>{{ opt }}</span>
+          {% if is_correct_opt %}
+            <span class="text-emerald-600 font-semibold text-sm">✓ Đáp án đúng</span>
+          {% elif is_selected %}
+            <span class="text-rose-600 font-semibold text-sm">✗ Bạn chọn</span>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    <div class="p-4 rounded-2xl mb-4
+                {% if is_correct %}bg-emerald-50 text-emerald-800 border border-emerald-200
+                {% else %}bg-rose-50 text-rose-800 border border-rose-200{% endif %}">
+      {% if is_correct %}
+        🎉 <strong>Chính xác!</strong>
+      {% else %}
+        ❌ <strong>Sai rồi.</strong> Đáp án đúng là <strong>{{ question.correct_answer }}</strong>.
+      {% endif %}
+    </div>
+
+    {% if is_last %}
+      {# Điều hướng trang đầy đủ (không HTMX) — trả về full page, tránh nhồi HTML lồng nhau vào body. #}
+      <a href="/quiz/result/{{ session_id }}"
+         class="block w-full text-center py-3 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600">
+        Xem kết quả →
+      </a>
+    {% else %}
+      <button hx-get="/quiz/{{ topic_obj.id }}/next?session_id={{ session_id }}"
+              hx-target="#quiz-card"
+              hx-swap="outerHTML"
+              class="w-full py-3 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600">
+        Câu tiếp theo →
+      </button>
+    {% endif %}
+  {% endif %}
+
+</div>

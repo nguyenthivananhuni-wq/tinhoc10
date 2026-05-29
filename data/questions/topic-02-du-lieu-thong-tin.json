@@ -1,0 +1,272 @@
+[
+  {
+    "topic_id": 2,
+    "content": "Đơn vị nhỏ nhất để biểu diễn dữ liệu trong máy tính là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["bit", "byte", "KB", "MB"],
+    "correct_answer": "bit",
+    "source_page": "AI-drafted, verify with SGK Tin 10 CD Bài 6"
+  },
+  {
+    "topic_id": 2,
+    "content": "1 byte bằng bao nhiêu bit?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["8 bit", "4 bit", "16 bit", "10 bit"],
+    "correct_answer": "8 bit",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Hệ đếm nhị phân chỉ dùng những chữ số nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["0 và 1", "0, 1, 2", "1 và 2", "0 đến 9"],
+    "correct_answer": "0 và 1",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Dữ liệu là gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Các sự kiện, con số, ký hiệu chưa qua xử lý", "Kết quả cuối cùng của một bài toán", "Phần mềm ứng dụng", "Thông tin đã có ý nghĩa"],
+    "correct_answer": "Các sự kiện, con số, ký hiệu chưa qua xử lý",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Thông tin trong tin học được hiểu là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Dữ liệu đã được xử lý và có ý nghĩa với người nhận", "Một loại tín hiệu điện", "Phần cứng máy tính", "Mạng Internet"],
+    "correct_answer": "Dữ liệu đã được xử lý và có ý nghĩa với người nhận",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "ASCII là bảng mã dùng để?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Mã hóa các ký tự thành số nhị phân", "Nén dữ liệu", "Mã hóa video", "Quản lý mạng"],
+    "correct_answer": "Mã hóa các ký tự thành số nhị phân",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Đơn vị KB (kilobyte), MB (megabyte), GB (gigabyte) dùng để đo gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Dung lượng dữ liệu", "Tốc độ CPU", "Cường độ ánh sáng màn hình", "Tần số mạng"],
+    "correct_answer": "Dung lượng dữ liệu",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "File ảnh có phần mở rộng .jpg thuộc loại dữ liệu gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Dữ liệu hình ảnh", "Dữ liệu văn bản", "Dữ liệu âm thanh", "Dữ liệu chương trình"],
+    "correct_answer": "Dữ liệu hình ảnh",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "File có phần mở rộng .mp3 chứa dữ liệu loại nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Âm thanh", "Văn bản", "Hình ảnh", "Video"],
+    "correct_answer": "Âm thanh",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Quá trình xử lý thông tin trong máy tính KHÔNG bao gồm bước nào sau đây?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Nướng bánh", "Thu thập", "Xử lý", "Lưu trữ"],
+    "correct_answer": "Nướng bánh",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Số nhị phân 1010 bằng số thập phân nào?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["10", "8", "12", "20"],
+    "correct_answer": "10",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Số thập phân 5 chuyển sang nhị phân là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["101", "110", "100", "111"],
+    "correct_answer": "101",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "1 KB bằng bao nhiêu byte (theo quy ước nhị phân thông dụng)?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["1024 byte", "1000 byte", "512 byte", "2048 byte"],
+    "correct_answer": "1024 byte",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Nếu mã ASCII của ký tự 'A' là 65, thì mã của 'C' là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["67", "66", "68", "70"],
+    "correct_answer": "67",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Unicode được phát triển nhằm mục đích chính là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Mã hóa được ký tự của hầu hết ngôn ngữ trên thế giới", "Thay thế ngôn ngữ lập trình", "Tăng tốc CPU", "Mã hóa hình ảnh"],
+    "correct_answer": "Mã hóa được ký tự của hầu hết ngôn ngữ trên thế giới",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Tại sao máy tính dùng hệ nhị phân thay vì thập phân?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Vì mạch điện chỉ có 2 trạng thái: bật/tắt", "Vì nhị phân dễ tính toán hơn cho con người", "Vì nhị phân tiết kiệm pin", "Vì nhị phân chiếm ít bộ nhớ hơn"],
+    "correct_answer": "Vì mạch điện chỉ có 2 trạng thái: bật/tắt",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Trong các loại dữ liệu sau, loại nào KHÔNG phải dữ liệu phi cấu trúc?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Bảng tính Excel có hàng và cột rõ ràng", "Đoạn video", "Ảnh chụp", "Bài đăng mạng xã hội tự do"],
+    "correct_answer": "Bảng tính Excel có hàng và cột rõ ràng",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "File văn bản thuần (.txt) và file Word (.docx) khác nhau ở điểm nào?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["File .docx có định dạng (font, màu, hình), file .txt chỉ có ký tự thuần", "File .txt lớn hơn file .docx", "File .docx không mở được trên Windows", "File .txt mã hóa, file .docx không"],
+    "correct_answer": "File .docx có định dạng (font, màu, hình), file .txt chỉ có ký tự thuần",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Một bit có thể biểu diễn bao nhiêu trạng thái?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["2", "4", "8", "10"],
+    "correct_answer": "2",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "8 bit có thể biểu diễn tối đa bao nhiêu giá trị khác nhau?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["256", "128", "64", "1024"],
+    "correct_answer": "256",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "1 GB (gigabyte) tương đương bao nhiêu MB (megabyte)?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["1024 MB", "1000 MB", "512 MB", "2048 MB"],
+    "correct_answer": "1024 MB",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Một ảnh trắng đen có kích thước 100x100 pixel, mỗi pixel dùng 1 bit. Dung lượng tối thiểu của ảnh là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["1250 byte", "10000 byte", "100 byte", "10000 bit chính xác bằng 1250 KB"],
+    "correct_answer": "1250 byte",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Cần ít nhất bao nhiêu bit để mã hóa được 1000 giá trị khác nhau?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["10 bit", "8 bit", "9 bit", "16 bit"],
+    "correct_answer": "10 bit",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Số thập phân 255 chuyển sang nhị phân là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["11111111", "10000000", "11110000", "10101010"],
+    "correct_answer": "11111111",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Nén dữ liệu (compression) có lợi ích gì so với không nén?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Giảm dung lượng lưu trữ và thời gian truyền", "Tăng độ phân giải ảnh", "Tăng số bit mã hóa", "Bảo mật cao hơn"],
+    "correct_answer": "Giảm dung lượng lưu trữ và thời gian truyền",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Nén có mất dữ liệu (lossy) thường được dùng cho loại file nào?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Ảnh JPEG, nhạc MP3, video MP4", "File văn bản .txt", "File Excel .xlsx", "File chương trình .exe"],
+    "correct_answer": "Ảnh JPEG, nhạc MP3, video MP4",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Nếu mỗi ký tự ASCII mở rộng dùng 1 byte, một văn bản 5000 ký tự có dung lượng xấp xỉ?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["~5 KB", "~5 MB", "~50 byte", "~500 KB"],
+    "correct_answer": "~5 KB",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Số nhị phân 1100 cộng với 1010 cho kết quả nhị phân?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["10110", "11110", "10000", "01010"],
+    "correct_answer": "10110",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Dữ liệu được số hóa (digitized) để máy tính xử lý chủ yếu vì?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Máy tính chỉ làm việc với dữ liệu nhị phân (số)", "Số hóa làm dữ liệu đẹp hơn", "Số hóa làm dữ liệu lớn hơn", "Số hóa thay thế con người"],
+    "correct_answer": "Máy tính chỉ làm việc với dữ liệu nhị phân (số)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 2,
+    "content": "Một video 10 phút, bitrate 1 Mbps. Dung lượng xấp xỉ là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["~75 MB", "~10 MB", "~600 MB", "~1 GB"],
+    "correct_answer": "~75 MB",
+    "source_page": "AI-drafted, verify with SGK"
+  }
+]

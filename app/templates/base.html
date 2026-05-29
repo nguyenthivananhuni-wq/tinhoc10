@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Hệ thống học Tin 10 — Cánh Diều{% endblock %}</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg:      '#ECE8FB',
+              surface: '#F6F3FD',
+              50:  '#F5F2FE',
+              100: '#EDE6FD',
+              200: '#DDD0FB',
+              300: '#C4ACF7',
+              400: '#A982F0',
+              500: '#8B5CF6',
+              600: '#7C3AED',
+              700: '#6D28D9',
+              accent: '#EC4899',
+            },
+          },
+          fontFamily: {
+            sans: ['Poppins', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: { '4xl': '2rem' },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/htmx.org@1.9.10"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    body { font-family: 'Poppins', system-ui, sans-serif; }
+    .prose h1 { font-size: 1.875rem; font-weight: 700; margin: 1rem 0; }
+    .prose h2 { font-size: 1.5rem; font-weight: 600; margin: 1.5rem 0 0.75rem; color: #6D28D9; }
+    .prose h3 { font-size: 1.25rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+    .prose p  { margin: 0.5rem 0; line-height: 1.65; }
+    .prose ul { list-style: disc; margin-left: 1.5rem; }
+    .prose ol { list-style: decimal; margin-left: 1.5rem; }
+    .prose li { margin: 0.25rem 0; }
+    .prose code { background: #EDE6FD; padding: 1px 6px; border-radius: 4px; font-family: monospace; font-size: 0.9em; }
+    .prose pre { background: #2e1065; color: #ede9fe; padding: 1rem; border-radius: 12px; overflow-x: auto; margin: 0.75rem 0; }
+    .prose pre code { background: transparent; padding: 0; color: inherit; }
+    .prose table { width: 100%; border-collapse: collapse; margin: 0.75rem 0; }
+    .prose th, .prose td { border: 1px solid #DDD0FB; padding: 6px 10px; text-align: left; }
+    .prose th { background: #EDE6FD; }
+    .prose blockquote { border-left: 4px solid #A982F0; padding-left: 1rem; color: #6b21a8; margin: 0.75rem 0; }
+    ::-webkit-scrollbar { width: 10px; height: 10px; }
+    ::-webkit-scrollbar-thumb { background: #C4ACF7; border-radius: 8px; }
+  </style>
+</head>
+<body class="bg-brand-bg text-slate-800 min-h-screen">
+  {% block body %}{% endblock %}
+  <script src="/static/js/quiz_timer.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "base_app.html" %}
+{% set active = "history" %}
+{% block title %}Lịch sử — Tin 10{% endblock %}
+{% block page_title %}Lịch sử làm bài 📜{% endblock %}
+{% block page_subtitle %}Tổng {{ total }} lượt · đúng {{ correct }} ({{ "%.0f"|format(accuracy) }}%).{% endblock %}
+{% block content %}
+
+{% if attempts %}
+<div class="bg-white rounded-4xl shadow-sm border border-brand-100 overflow-hidden">
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-brand-50 text-slate-500">
+        <tr>
+          <th class="px-4 py-3 text-left font-medium">Thời gian</th>
+          <th class="px-4 py-3 text-left font-medium">Chủ đề</th>
+          <th class="px-4 py-3 text-left font-medium">Câu hỏi</th>
+          <th class="px-4 py-3 text-center font-medium">Kết quả</th>
+          <th class="px-4 py-3 text-right font-medium">Thời gian</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for a, q, t in attempts %}
+        <tr class="border-t border-brand-50 hover:bg-brand-50/50">
+          <td class="px-4 py-3 text-slate-400 whitespace-nowrap">{{ a.attempted_at.strftime('%d/%m %H:%M') }}</td>
+          <td class="px-4 py-3 text-slate-600">{{ t.name }}</td>
+          <td class="px-4 py-3 max-w-md truncate text-slate-700" title="{{ q.content }}">{{ q.content }}</td>
+          <td class="px-4 py-3 text-center">
+            {% if a.is_correct %}
+              <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-600 font-semibold text-xs">✓ Đúng</span>
+            {% else %}
+              <span class="px-2.5 py-1 rounded-full bg-rose-100 text-rose-600 font-semibold text-xs">✗ Sai</span>
+            {% endif %}
+          </td>
+          <td class="px-4 py-3 text-right text-slate-400">{{ "%.1f"|format(a.response_time_ms / 1000) }}s</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% else %}
+<div class="bg-white rounded-4xl shadow-sm border border-brand-100 p-12 text-center">
+  <div class="text-5xl mb-3">📭</div>
+  <p class="text-slate-400 mb-5">Chưa có lượt làm bài nào.</p>
+  <a href="/topics" class="inline-block px-6 py-2.5 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600">
+    Bắt đầu Test →
+  </a>
+</div>
+{% endif %}
+
+{% endblock %}

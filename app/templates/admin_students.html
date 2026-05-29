@@ -1,0 +1,59 @@
+{% extends "base_app.html" %}
+{% set active = "admin" %}
+{% set admin_active = "students" %}
+{% block title %}Học sinh — Admin{% endblock %}
+{% block page_title %}Danh sách học sinh 👨‍🎓{% endblock %}
+{% block page_subtitle %}{{ students|length }} tài khoản — xếp theo mastery giảm dần.{% endblock %}
+{% block content %}
+
+{% include "_admin_tabs.html" %}
+
+<div class="bg-white rounded-4xl shadow-sm border border-brand-100 overflow-hidden">
+  <div class="overflow-x-auto">
+    <table class="w-full text-sm">
+      <thead class="bg-brand-50 text-slate-500">
+        <tr>
+          <th class="px-4 py-3 text-left font-medium">Học sinh</th>
+          <th class="px-4 py-3 text-center font-medium">Lượt làm</th>
+          <th class="px-4 py-3 text-center font-medium">Đúng</th>
+          <th class="px-4 py-3 text-center font-medium">Chính xác</th>
+          <th class="px-4 py-3 text-center font-medium">Mastery TB</th>
+          <th class="px-4 py-3 text-center font-medium">θ</th>
+          <th class="px-4 py-3 text-center font-medium">Nhóm</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in students %}
+        <tr class="border-t border-brand-50 hover:bg-brand-50/50">
+          <td class="px-4 py-3">
+            <a href="/admin/students/{{ s.id }}" class="flex items-center gap-2 font-medium text-slate-800 hover:text-brand-600">
+              <span class="grid place-items-center w-8 h-8 rounded-full bg-brand-500 text-white text-xs font-bold">{{ s.username[0]|upper }}</span>
+              {{ s.username }}
+              {% if s.is_admin %}<span class="text-xs px-1.5 py-0.5 rounded bg-brand-100 text-brand-700">admin</span>{% endif %}
+            </a>
+          </td>
+          <td class="px-4 py-3 text-center text-slate-600">{{ s.total }}</td>
+          <td class="px-4 py-3 text-center text-slate-600">{{ s.correct }}</td>
+          <td class="px-4 py-3 text-center font-semibold text-slate-700">{{ s.accuracy }}%</td>
+          <td class="px-4 py-3 text-center">
+            <span class="font-semibold
+              {% if s.avg_mastery_percent < 40 %}text-rose-500
+              {% elif s.avg_mastery_percent < 70 %}text-amber-500
+              {% else %}text-emerald-500{% endif %}">{{ s.avg_mastery_percent }}%</span>
+          </td>
+          <td class="px-4 py-3 text-center text-slate-600">{{ s.theta }}</td>
+          <td class="px-4 py-3 text-center">
+            <span class="px-2.5 py-1 rounded-full text-xs font-medium
+              {% if s.cluster == 'Yếu' %}bg-rose-100 text-rose-600
+              {% elif s.cluster == 'Trung bình' %}bg-amber-100 text-amber-600
+              {% elif s.cluster == 'Giỏi' %}bg-emerald-100 text-emerald-600
+              {% else %}bg-slate-100 text-slate-400{% endif %}">{{ s.cluster }}</span>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+{% endblock %}

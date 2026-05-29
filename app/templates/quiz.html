@@ -1,0 +1,19 @@
+{% extends "base_app.html" %}
+{% set active = "topics" %}
+{% block title %}Quiz: {{ topic.name }} — Tin 10{% endblock %}
+{% block page_title %}{{ topic.name }}{% endblock %}
+{% block page_subtitle %}Trả lời {{ total }} câu — câu hỏi chọn thích ứng theo năng lực của bạn (IRT).{% endblock %}
+{% block content %}
+
+<div class="max-w-2xl mx-auto">
+  <div class="mb-4 flex justify-end">
+    <a href="/topics" class="text-sm text-slate-400 hover:text-brand-600">← Bỏ quiz</a>
+  </div>
+  <div id="quiz-card-wrapper">
+    {% with topic_obj = topic %}
+      {% include "_quiz_card.html" %}
+    {% endwith %}
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,97 @@
+{% extends "base_app.html" %}
+{% set active = "admin" %}
+{% set admin_active = "overview" %}
+{% block title %}Tổng quan lớp — Admin{% endblock %}
+{% block page_title %}Panel giáo viên 📊{% endblock %}
+{% block page_subtitle %}Thống kê toàn lớp học.{% endblock %}
+{% block content %}
+
+{% include "_admin_tabs.html" %}
+
+<!-- Counters -->
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100">
+    <div class="text-sm text-slate-400">Học sinh</div>
+    <div class="text-3xl font-extrabold text-slate-900 mt-1">{{ n_students }}</div>
+    <div class="text-xs text-slate-400 mt-1">{{ n_active }} đã làm bài</div>
+  </div>
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100">
+    <div class="text-sm text-slate-400">Câu hỏi</div>
+    <div class="text-3xl font-extrabold text-brand-500 mt-1">{{ n_questions }}</div>
+  </div>
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100">
+    <div class="text-sm text-slate-400">Chủ đề</div>
+    <div class="text-3xl font-extrabold text-emerald-500 mt-1">{{ n_topics }}</div>
+  </div>
+  <div class="bg-white rounded-3xl p-5 shadow-sm border border-brand-100">
+    <div class="text-sm text-slate-400">Chủ đề yếu nhất lớp</div>
+    <div class="text-base font-bold text-rose-500 mt-2">
+      {{ topic_avg[0].name if topic_avg else "—" }}
+      {% if topic_avg %}<span class="text-slate-400 font-normal">({{ topic_avg[0].percent }}%)</span>{% endif %}
+    </div>
+  </div>
+</div>
+
+<div class="grid lg:grid-cols-2 gap-6">
+  <!-- Distribution -->
+  <div class="bg-white rounded-4xl p-6 shadow-sm border border-brand-100">
+    <h2 class="font-bold text-lg text-slate-900 mb-1">Phân bố độ chính xác</h2>
+    <p class="text-xs text-slate-400 mb-3">Số học sinh theo khoảng % đúng</p>
+    <canvas id="distChart" height="220"></canvas>
+  </div>
+
+  <!-- Mastery by topic -->
+  <div class="bg-white rounded-4xl p-6 shadow-sm border border-brand-100">
+    <h2 class="font-bold text-lg text-slate-900 mb-4">Mastery trung bình theo chủ đề</h2>
+    <div class="space-y-3">
+      {% for t in topic_avg %}
+      <div>
+        <div class="flex justify-between text-sm mb-1"><span class="text-slate-600">{{ t.name }}</span><span class="text-slate-500">{{ t.percent }}%</span></div>
+        <div class="w-full bg-brand-50 rounded-full h-2"><div class="h-2 rounded-full bg-brand-400" style="width: {{ t.percent }}%"></div></div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <!-- Hardest -->
+  <div class="bg-white rounded-4xl p-6 shadow-sm border border-brand-100">
+    <h2 class="font-bold text-lg text-rose-600 mb-3">🔴 Câu khó nhất lớp</h2>
+    {% if hardest %}
+    <ol class="space-y-2 text-sm">
+      {% for q in hardest %}
+      <li class="flex justify-between gap-3"><span class="truncate text-slate-700" title="{{ q.content }}">{{ q.content }}</span><span class="text-rose-500 font-semibold whitespace-nowrap">{{ q.accuracy }}%</span></li>
+      {% endfor %}
+    </ol>
+    {% else %}<p class="text-sm text-slate-400">Chưa có dữ liệu.</p>{% endif %}
+  </div>
+
+  <!-- Easiest -->
+  <div class="bg-white rounded-4xl p-6 shadow-sm border border-brand-100">
+    <h2 class="font-bold text-lg text-emerald-600 mb-3">🟢 Câu dễ nhất lớp</h2>
+    {% if easiest %}
+    <ol class="space-y-2 text-sm">
+      {% for q in easiest %}
+      <li class="flex justify-between gap-3"><span class="truncate text-slate-700" title="{{ q.content }}">{{ q.content }}</span><span class="text-emerald-500 font-semibold whitespace-nowrap">{{ q.accuracy }}%</span></li>
+      {% endfor %}
+    </ol>
+    {% else %}<p class="text-sm text-slate-400">Chưa có dữ liệu.</p>{% endif %}
+  </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script>
+new Chart(document.getElementById('distChart').getContext('2d'), {
+  type: 'bar',
+  data: {
+    labels: {{ bucket_labels|tojson }},
+    datasets: [{ label: 'Số học sinh', data: {{ buckets|tojson }},
+      backgroundColor: 'rgba(139, 92, 246, 0.7)', borderRadius: 8 }]
+  },
+  options: { responsive: true, maintainAspectRatio: false,
+    scales: { y: { beginAtZero: true, ticks: { stepSize: 1 } } },
+    plugins: { legend: { display: false } } }
+});
+</script>
+{% endblock %}

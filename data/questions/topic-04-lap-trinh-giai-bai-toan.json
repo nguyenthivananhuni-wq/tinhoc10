@@ -1,0 +1,272 @@
+[
+  {
+    "topic_id": 4,
+    "content": "Thuật toán là gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Dãy hữu hạn các bước thực hiện một cách rõ ràng để giải bài toán", "Một chương trình Python hoàn chỉnh", "Một thiết bị phần cứng", "Tên một ngôn ngữ lập trình"],
+    "correct_answer": "Dãy hữu hạn các bước thực hiện một cách rõ ràng để giải bài toán",
+    "source_page": "AI-drafted, verify with SGK Tin 10 CD Bài 18"
+  },
+  {
+    "topic_id": 4,
+    "content": "Khi giải một bài toán bằng máy tính, bước đầu tiên cần làm là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Xác định bài toán (input, output, ràng buộc)", "Viết code ngay lập tức", "Chạy thử chương trình", "Đăng lên Internet"],
+    "correct_answer": "Xác định bài toán (input, output, ràng buộc)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Cấu trúc tuần tự (sequence) trong thuật toán nghĩa là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Các bước được thực hiện lần lượt từ trên xuống dưới", "Các bước được thực hiện song song", "Có thể bỏ qua một số bước", "Lặp lại một số bước nhiều lần"],
+    "correct_answer": "Các bước được thực hiện lần lượt từ trên xuống dưới",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Cấu trúc rẽ nhánh (branching) cho phép?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Chọn thực hiện một trong các nhánh tùy theo điều kiện", "Thực hiện song song nhiều nhánh", "Lặp lại một khối lệnh", "Xóa biến trong chương trình"],
+    "correct_answer": "Chọn thực hiện một trong các nhánh tùy theo điều kiện",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Cấu trúc lặp (loop) dùng khi nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Cần thực hiện cùng một thao tác nhiều lần", "Cần chia bài toán nhỏ hơn", "Cần lưu trữ dữ liệu", "Cần in kết quả ra màn hình"],
+    "correct_answer": "Cần thực hiện cùng một thao tác nhiều lần",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Sơ đồ khối (flowchart) là?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Hình vẽ mô tả các bước của thuật toán bằng các khối hình", "Mã giả viết bằng tiếng Anh", "Code Python đã hoàn thiện", "Một loại file dữ liệu"],
+    "correct_answer": "Hình vẽ mô tả các bước của thuật toán bằng các khối hình",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Trong sơ đồ khối, khối hình thoi (♦) biểu thị?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Câu hỏi/điều kiện rẽ nhánh", "Phép gán hoặc thao tác xử lý", "Nhập/xuất dữ liệu", "Bắt đầu hoặc kết thúc"],
+    "correct_answer": "Câu hỏi/điều kiện rẽ nhánh",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Trong sơ đồ khối, khối hình bầu dục (oval) biểu thị?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Bắt đầu hoặc kết thúc thuật toán", "Một câu hỏi điều kiện", "Phép tính toán", "Vòng lặp"],
+    "correct_answer": "Bắt đầu hoặc kết thúc thuật toán",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Pseudocode (mã giả) khác với code Python ở điểm nào?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Pseudocode mô tả ý tưởng bằng ngôn ngữ gần với con người, không thể chạy trực tiếp", "Pseudocode chạy nhanh hơn", "Pseudocode chỉ dùng cho web", "Pseudocode là một thư viện Python"],
+    "correct_answer": "Pseudocode mô tả ý tưởng bằng ngôn ngữ gần với con người, không thể chạy trực tiếp",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Input và Output của một bài toán là gì?",
+    "difficulty_level": 1,
+    "type": "mcq",
+    "options": ["Input: dữ liệu vào; Output: kết quả ra", "Input: code; Output: bug", "Input: màn hình; Output: bàn phím", "Input: bộ nhớ; Output: CPU"],
+    "correct_answer": "Input: dữ liệu vào; Output: kết quả ra",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Để tìm số lớn nhất trong 3 số nguyên, cần dùng cấu trúc nào?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Rẽ nhánh (if/else)", "Lặp vô hạn", "Đệ quy", "Không cần cấu trúc nào"],
+    "correct_answer": "Rẽ nhánh (if/else)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Để tính tổng các số từ 1 đến 100, cấu trúc phù hợp nhất là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Vòng lặp for", "Chỉ phép gán", "Chỉ rẽ nhánh if", "Đệ quy bắt buộc"],
+    "correct_answer": "Vòng lặp for",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Khi nào dùng vòng lặp 'while' thay vì 'for' là phù hợp hơn?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Khi số lần lặp chưa biết trước, phụ thuộc điều kiện", "Khi luôn cần lặp đúng 10 lần", "Khi không muốn dùng biến đếm", "Khi cần in ra màn hình"],
+    "correct_answer": "Khi số lần lặp chưa biết trước, phụ thuộc điều kiện",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Một tính chất quan trọng của thuật toán là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Tính dừng (kết thúc sau hữu hạn bước)", "Phải dùng đệ quy", "Phải dài hơn 100 dòng", "Chỉ chạy được trên Windows"],
+    "correct_answer": "Tính dừng (kết thúc sau hữu hạn bước)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Để kiểm tra một số n là chẵn hay lẻ, ta dùng phép toán nào?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Phép chia lấy dư: n % 2", "Phép chia thường: n / 2", "Phép cộng: n + 2", "Phép nhân: n * 2"],
+    "correct_answer": "Phép chia lấy dư: n % 2",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Trace (truy vết) thuật toán có mục đích gì?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Kiểm tra giá trị các biến qua từng bước để phát hiện lỗi logic", "Tăng tốc thuật toán", "Mã hóa code", "Làm đẹp giao diện"],
+    "correct_answer": "Kiểm tra giá trị các biến qua từng bước để phát hiện lỗi logic",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Tính dừng (finiteness) của thuật toán nghĩa là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Thuật toán luôn kết thúc sau số bước hữu hạn", "Thuật toán phải có lệnh dừng (stop)", "Thuật toán chạy nhanh nhất", "Thuật toán không có vòng lặp"],
+    "correct_answer": "Thuật toán luôn kết thúc sau số bước hữu hạn",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Một bài toán có thể có bao nhiêu thuật toán giải?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Nhiều thuật toán khác nhau với độ hiệu quả khác nhau", "Luôn chỉ có 1", "Chỉ có 2", "Không có"],
+    "correct_answer": "Nhiều thuật toán khác nhau với độ hiệu quả khác nhau",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Khi viết thuật toán tính trung bình cộng của n số, cấu trúc dữ liệu phù hợp là?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Một danh sách (list) chứa n số", "Một biến đơn duy nhất", "Một file ảnh", "Một kết nối Internet"],
+    "correct_answer": "Một danh sách (list) chứa n số",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Khi nào nên dừng một thuật toán giải phương trình bậc 2?",
+    "difficulty_level": 2,
+    "type": "mcq",
+    "options": ["Sau khi xét delta và in ra nghiệm (hoặc kết luận vô nghiệm)", "Sau khi nhập a, b, c", "Sau khi tính delta nhưng chưa kết luận", "Khi người dùng nhấn ESC"],
+    "correct_answer": "Sau khi xét delta và in ra nghiệm (hoặc kết luận vô nghiệm)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Cho thuật toán: 'Nhập n; nếu n > 0 in \"dương\", n < 0 in \"âm\", còn lại in \"không\"'. Với n = -3, output là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["âm", "dương", "không", "Lỗi"],
+    "correct_answer": "âm",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Tính tổng S = 1 + 2 + ... + 100 bằng công thức Gauss: S = n(n+1)/2. Kết quả?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["5050", "5000", "10100", "1000"],
+    "correct_answer": "5050",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Trace đoạn:\ns = 0\nfor i in range(1, 5):\n    s = s + i\nprint(s)\n→ Kết quả?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["10", "15", "5", "4"],
+    "correct_answer": "10",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Vòng lặp vô hạn (infinite loop) xảy ra khi nào?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Điều kiện dừng không bao giờ trở thành False", "Khi quên dấu chấm phẩy", "Khi dùng biến string", "Khi không có lệnh print"],
+    "correct_answer": "Điều kiện dừng không bao giờ trở thành False",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Khi tìm số lớn nhất trong một danh sách rỗng, thuật toán cần xử lý như thế nào?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Kiểm tra danh sách rỗng trước, trả thông báo hợp lý", "Trả về 0 mặc định", "Bỏ qua, không xử lý", "Chạy vô hạn"],
+    "correct_answer": "Kiểm tra danh sách rỗng trước, trả thông báo hợp lý",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Thuật toán tìm kiếm tuyến tính (linear search) trong dãy n phần tử, trường hợp xấu nhất duyệt qua bao nhiêu phần tử?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["n", "1", "log n", "n/2"],
+    "correct_answer": "n",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Để giải bài toán 'in ra số chẵn từ 2 đến 20', đoạn code đúng là?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["for i in range(2, 21, 2): print(i)", "for i in range(1, 20): print(i)", "for i in range(0, 10): print(i % 2)", "for i in range(2, 20): print(i + 1)"],
+    "correct_answer": "for i in range(2, 21, 2): print(i)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "FizzBuzz: in số 1..15, nếu chia hết 3 in 'Fizz', chia hết 5 in 'Buzz', chia hết cả 2 in 'FizzBuzz'. Với i = 15 in ra?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["FizzBuzz", "Fizz", "Buzz", "15"],
+    "correct_answer": "FizzBuzz",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Đoạn:\nn = 5\nf = 1\nfor i in range(1, n+1):\n    f = f * i\nprint(f)\n→ tính gì?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Giai thừa của 5 (= 120)", "Tổng 1..5 (= 15)", "Bình phương 5 (= 25)", "5"],
+    "correct_answer": "Giai thừa của 5 (= 120)",
+    "source_page": "AI-drafted, verify with SGK"
+  },
+  {
+    "topic_id": 4,
+    "content": "Khi thiết kế test case cho thuật toán giải phương trình bậc 2, test case quan trọng KHÔNG bao gồm?",
+    "difficulty_level": 3,
+    "type": "mcq",
+    "options": ["Trường hợp delta âm (vô nghiệm thực)", "Trường hợp a = 0 (suy biến)", "Trường hợp delta = 0 (nghiệm kép)", "Trường hợp người dùng dùng laptop hay PC"],
+    "correct_answer": "Trường hợp người dùng dùng laptop hay PC",
+    "source_page": "AI-drafted, verify with SGK"
+  }
+]

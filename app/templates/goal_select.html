@@ -1,0 +1,34 @@
+{% extends "base_app.html" %}
+{% set active = "goal" %}
+{% block title %}Mục tiêu học — Tin 10{% endblock %}
+{% block page_title %}Mục tiêu học 🎯{% endblock %}
+{% block page_subtitle %}Hệ thống điều chỉnh gợi ý theo mục tiêu của bạn (có thể đổi sau).{% endblock %}
+{% block content %}
+
+<form action="/goal" method="post" class="max-w-3xl">
+  <div class="grid sm:grid-cols-2 gap-4">
+    {% for key, (label, icon, desc) in goal_options.items() %}
+    <label class="block bg-white border-2 rounded-3xl p-5 cursor-pointer transition hover:border-brand-400
+                  {{ 'border-brand-500 ring-2 ring-brand-200' if key == current_goal else 'border-brand-100' }}">
+      <div class="flex items-start gap-3">
+        <input type="radio" name="goal_type" value="{{ key }}" required
+               {{ 'checked' if key == current_goal else '' }} class="mt-1.5 accent-brand-500">
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-1">
+            <span class="grid place-items-center w-10 h-10 rounded-xl bg-brand-100 text-xl">{{ icon }}</span>
+            <h3 class="font-bold text-lg text-slate-900">{{ label }}</h3>
+          </div>
+          <p class="text-sm text-slate-500">{{ desc }}</p>
+        </div>
+      </div>
+    </label>
+    {% endfor %}
+  </div>
+
+  <button type="submit"
+          class="mt-6 px-8 py-3 rounded-full bg-brand-500 text-white font-semibold hover:bg-brand-600 shadow-lg shadow-brand-500/30">
+    Lưu mục tiêu
+  </button>
+</form>
+
+{% endblock %}

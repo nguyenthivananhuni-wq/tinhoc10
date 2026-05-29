@@ -1,0 +1,16 @@
+{# Tab nav cho panel giáo viên. Đặt {% set admin_active = "overview" %} ở trang con. #}
+<div class="flex flex-wrap gap-2 mb-6">
+  {% set tabs = [
+    ("overview",  "/admin/overview",  "📊 Tổng quan"),
+    ("students",  "/admin/students",  "👨‍🎓 Học sinh"),
+    ("questions", "/admin/questions", "📝 Câu hỏi"),
+    ("clusters",  "/admin/clusters",  "👥 Phân cụm"),
+  ] %}
+  {% for key, href, label in tabs %}
+  <a href="{{ href }}"
+     class="px-4 py-2 rounded-full text-sm font-medium transition
+            {% if admin_active == key %}bg-brand-500 text-white{% else %}bg-white text-slate-600 border border-brand-200 hover:bg-brand-50{% endif %}">
+    {{ label }}
+  </a>
+  {% endfor %}
+</div>
