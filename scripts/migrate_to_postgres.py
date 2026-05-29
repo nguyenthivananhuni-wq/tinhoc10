@@ -21,6 +21,13 @@ import os
 import sys
 from pathlib import Path
 
+# Console Windows mặc định cp1252 không in được tiếng Việt có dấu → ép UTF-8.
+try:
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+except Exception:
+    pass
+
 from sqlalchemy import create_engine, func, select, text
 
 # Đăng ký toàn bộ bảng vào metadata để biết thứ tự khóa ngoại.
@@ -102,7 +109,8 @@ def main() -> int:
                     dconn.execute(
                         text(
                             "SELECT setval(pg_get_serial_sequence(:t, 'id'), "
-                            "COALESCE((SELECT MAX(id) FROM " + tbl.name + "), 1), true)"
+                            # Bọc tên bảng trong "" vì có tên (vd user) trùng từ khóa Postgres.
+                            'COALESCE((SELECT MAX(id) FROM "' + tbl.name + '"), 1), true)'
                         ),
                         {"t": tbl.name},
                     )
